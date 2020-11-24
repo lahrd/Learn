@@ -1,0 +1,11 @@
+printout () {
+ip a | grep inet}
+
+echo command?
+read command
+echo $command
+
+if [ $command = "meep" ]
+then
+lsmeep
+fi
