@@ -1,0 +1,15 @@
+touch file.txt
+
+copy='cp file.txt newfile.txt'
+VAR1=copy
+VAR2=fun
+fun='i=0
+until [ $i -gt 4 ]
+do
+ echo $i
+ ((i++))
+ done'
+ 
+ VAR3="{VAR1}_${VAR2}"
+ 
+ echo $VAR3
