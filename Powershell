@@ -1,0 +1,1 @@
+Get-CimInstance Win64_OperatingSystem | FL *
