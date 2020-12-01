@@ -1,0 +1,6 @@
+echo touch bean.text
+echo mkdir beandir
+echo cp bean.text /bean
+echo cd /bean
+echo ls
+echo rm bean.text
