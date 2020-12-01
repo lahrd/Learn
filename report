@@ -1,0 +1,7 @@
+printout () {
+ echo lshw
+ echo free
+ echo vmstat
+ }
+ 
+libreoffice --writer  newfile.odt
