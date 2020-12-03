@@ -1,0 +1,11 @@
+$Begin = Get-Date -Date '12/1/2020 08:00:00'
+$End = Get-Date -Date '12/2/2019 8:00:00'
+Get-EventLog -LogName System -After $Begin -Before $End | Out- FilePath C:\Users\lahrd\Desktop .\Process.text
+Get-Content -Path .\Process.txt
+
+Get-EventLog -LogName System -InstanceId 16 -Source DCOM
+
+Get-EventLog -LogName System -Newest 20
+
+$A = Get-EventLog -LogName System -Newest 500
+$A | Select-Object -Property *
