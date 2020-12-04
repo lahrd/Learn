@@ -1,0 +1,14 @@
+Get-Process | Sort-Object -Property cpu -Descending
+
+Get-Process | Sort-Object -Property processid -Descending
+
+
+PS C:\Windows\system32> Get-Process | Sort-Object -Property processid -Descending -First 5
+
+start Mircosoft-Edge:www.google.com
+
+For ($i=1; $1 -le 10 ; $1++) {Start www.google.com}
+
+Stop-Process -Name MircosoftEdge
+
+Stop-Process -id 9072
