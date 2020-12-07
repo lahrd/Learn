@@ -1,0 +1,13 @@
+Robocopy-Item -Path C:\IEUser\Desktop -Destination C:\IEUser\Documents
+
+Robocopy-Item -Path "C:\IEUser\Desktop" -Destination "C:\Documents\Desktop" -Recurse
+
+Compress-Archive -LiteralPath C:\Documents\Desktop -DestinationPath "C:\IEUser\Desktop"
+
+$Session = New-PSSession -ComputerName "MSP" -Credential "MSBaby\IEUser"
+Copy-Item "C:\IEUser\Desktop\Desktop.zip" -Destination "C:\IEuser\Documents\" -ToSession $Session
+
+$Session = New-PSSession -ComputerName "MSP" -Credential "MSBaby\IEUser"
+Copy-Item "c:\Documents\" -Destination "C:\Documents\" -ToSession $Session -Recurse
+
+Compress-Archive -LiteralPath C:\Documents\Documents -DestinationPath "C:\IEUser\Desktop"
