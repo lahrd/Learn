@@ -1,0 +1,9 @@
+read -p "Enter your Directory" dir
+echo "$dir"
+cd "$dir"
+
+read -p "Input file permissions" permission
+echo "$permission changed"
+chmod $permission $dir
+echo "permission changed"
+ls -l
