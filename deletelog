@@ -1,0 +1,8 @@
+ls -l  /var/log/syslog
+ls -l  /var/log/syslog
+
+>/var/log/syslog
+>/var/log/wtmp
+
+ls -l /var/log/syslog
+ls -l /var/log/syslog
