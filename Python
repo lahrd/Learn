@@ -1,0 +1,6 @@
+def system():
+   return uname()
+
+def uname():
+       try:
+        system,node,release,version,machine = os.uname()
