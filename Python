@@ -1,6 +1,4 @@
-def system():
-   return uname()
-
-def uname():
-       try:
-        system,node,release,version,machine = os.uname()
+import os
+os.system("whoami")
+os.system("ipa")
+os.system("lshw -short")
