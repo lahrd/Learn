@@ -1,1 +1,14 @@
-
+score=78
+if score >= 50:
+    if score >=100:
+        print("Winner")
+    elif score >=90:
+        print("Second Best")
+    elif score>=80:
+        print("Hire a Body Double")
+    elif score>=70:
+        print("Go Home")
+    elif score>=60:
+        print("Don't ever play this game again.")
+else:
+    print("Lose your copy of this game.")
